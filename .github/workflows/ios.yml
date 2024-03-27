@@ -38,6 +38,6 @@ jobs:
           THEOS: theos
         run: |
           if [[ ${{ matrix.rootless }} == 0 ]]; then
-            sudo xcode-select -switch /Applications/Xcode_15.3.app
+            sudo xcode-select -switch /Applications/Xcode_9.app
           fi
           gmake package ROOTLESS=${{ matrix.rootless }}
