@@ -1,43 +1,35 @@
-name: Build PullOver-Pro
-
-on:
-  push:
-  pull_request:
+name: Build Release
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    strategy:
-      matrix:
-        include:
-          - rootless: 0
-            name: 'rootful'
-          - rootless: 1
-            name: 'rootless'
-
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.rootless }}
-      cancel-in-progress: true
-
-    name: Build (${{ matrix.name }})
-    runs-on: macos-12
+    runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-      - name: Install dependencies
-        run: brew install ldid make
-      - name: Set up Theos
-        uses: actions/checkout@v3
-        with:
-          repository: theos/theos
-          path: theos
-          submodules: recursive
-      - name: Compile
-        env:
-          THEOS: theos
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: brew install ldid xz dpkg
+      - uses: actions/checkout@v2
+      - name: Build
         run: |
-          if [[ ${{ matrix.rootless }} == 0 ]]; then
-            sudo xcode-select -switch /Applications/Xcode_13.4.1.app
-          fi
-          gmake package ROOTLESS=${{ matrix.rootless }}
+          chmod +x ./Resources/compile.release.action.sh
+          /bin/bash -c ./Resources/compile.release.action.sh
+      - name: Upload .ipa
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: "chromatic.relsan.${{ env.build_timestamp }}.ipa"
+          path: "build/artifact/chromatic.relsan.${{ env.build_timestamp }}.ipa"
+      - name: Upload .deb
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: "chromatic.rel.ci.${{ env.build_timestamp }}.deb"
+          path: "build/artifact/chromatic.rel.ci.${{ env.build_timestamp }}.deb"
+      - name: Upload .dSYM
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: "chromatic.rel.ci.${{ env.build_timestamp }}+dSYM.zip"
+          path: "build/artifact/${{ env.build_timestamp }}+dSYM.zip"
+      - name: Upload Bugsnag
+        run: |
+          brew install bugsnag/tap/bugsnag-dsym-upload
+          bugsnag-dsym-upload --api-key "${{ secrets.BUGSNAG_API_TOKEN }}" "build/artifact/${{ env.build_timestamp }}+dSYM.zip"
