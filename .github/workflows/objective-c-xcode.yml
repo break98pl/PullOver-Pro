@@ -9,23 +9,23 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: brew install ldid xz dpkg
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Build
         run: |
           chmod +x ./Resources/compile.release.action.sh
           /bin/bash -c ./Resources/compile.release.action.sh
       - name: Upload .ipa
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: "chromatic.relsan.${{ env.build_timestamp }}.ipa"
           path: "build/artifact/chromatic.relsan.${{ env.build_timestamp }}.ipa"
       - name: Upload .deb
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifactv4.4.3
         with:
           name: "chromatic.rel.ci.${{ env.build_timestamp }}.deb"
           path: "build/artifact/chromatic.rel.ci.${{ env.build_timestamp }}.deb"
       - name: Upload .dSYM
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifactv4.4.3
         with:
           name: "chromatic.rel.ci.${{ env.build_timestamp }}+dSYM.zip"
           path: "build/artifact/${{ env.build_timestamp }}+dSYM.zip"
