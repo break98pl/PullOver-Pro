@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		531E10E1618A85A6A18FD9B3 /* libPods-PullOverPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFA0C82E36BA8A0BD5D40C6 /* libPods-PullOverPro.a */; };
-		5B74C2AB2CDCF01E0057A9B9 /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71516C1225BF14F0021ADB8 /* libapplist.dylib */; };
 		5B74C2B02CDCF1FE0057A9B9 /* bootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B74C2AF2CDCF1FE0057A9B9 /* bootstrap.h */; };
 		5B74C2B12CDCF1FE0057A9B9 /* bootstrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B74C2AF2CDCF1FE0057A9B9 /* bootstrap.h */; };
 		5B74C2B62CDCF27D0057A9B9 /* substrate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B74C2B52CDCF27D0057A9B9 /* substrate.h */; };
 		5B74C2B72CDCF27D0057A9B9 /* substrate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B74C2B52CDCF27D0057A9B9 /* substrate.h */; };
-		5B74C2BC2CDCF3170057A9B9 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B74C2B82CDCF2A80057A9B9 /* CydiaSubstrate.framework */; };
+		5B74C2CB2CDCFD6F0057A9B9 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B74C2CA2CDCFD6F0057A9B9 /* Preferences.framework */; };
+		5B74C2CF2CDCFD880057A9B9 /* libapplist.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B74C2CE2CDCFD880057A9B9 /* libapplist.dylib */; };
 		C715168B225BC4000021ADB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C715168A225BC4000021ADB8 /* Foundation.framework */; };
 		C7151696225BC4000021ADB8 /* PullOverPro.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7151695225BC4000021ADB8 /* PullOverPro.mm */; };
 		C71516A3225BC55F0021ADB8 /* PullOverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516A1225BC55F0021ADB8 /* PullOverWindow.m */; };
 		C71516A8225BC62B0021ADB8 /* BaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516A6225BC62B0021ADB8 /* BaseScrollView.m */; };
 		C71516AC225BC6500021ADB8 /* PullOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516AA225BC6500021ADB8 /* PullOverViewController.m */; };
 		C71516B1225BC7800021ADB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71516B0225BC7800021ADB8 /* UIKit.framework */; };
-		C71516B3225BC7A00021ADB8 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C71516B2225BC7A00021ADB8 /* libsubstrate.dylib */; };
 		C71516B7225BDD6A0021ADB8 /* QuickSwitchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516B5225BDD6A0021ADB8 /* QuickSwitchTableView.m */; };
 		C71516B9225BE35E0021ADB8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71516B8225BE35D0021ADB8 /* AudioToolbox.framework */; };
 		C71516BB225BE3A20021ADB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71516BA225BE3A20021ADB8 /* CoreGraphics.framework */; };
@@ -34,7 +33,6 @@
 		C71516E8225C676A0021ADB8 /* PullOverProPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516E7225C676A0021ADB8 /* PullOverProPreferencesController.m */; };
 		C715170B225C72770021ADB8 /* POHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516AD225BC6C00021ADB8 /* POHandle.m */; };
 		C7151715225C73440021ADB8 /* POApplicationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C71516BD225BF12C0021ADB8 /* POApplicationHelper.m */; };
-		C71B3149242A9D1F00515A83 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C71B3148242A9D1500515A83 /* libMobileGestalt.tbd */; };
 		C72445E1225D3743001E1330 /* QSFavoritesPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72445E0225D3743001E1330 /* QSFavoritesPickerController.m */; };
 		C72445E4225D480B001E1330 /* POStepperTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72445E3225D480B001E1330 /* POStepperTableCell.m */; };
 		C72445FB225FEC04001E1330 /* POApplicationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C71516BC225BF12C0021ADB8 /* POApplicationHelper.h */; };
@@ -43,7 +41,6 @@
 		C77E05E1229B2B62003A59C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77E05DF229B2B5E003A59C9 /* QuartzCore.framework */; };
 		C7A168DB23B126B100451FA7 /* ContextInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A168DA23B126B100451FA7 /* ContextInterfaces.h */; };
 		C7CE0D42242A9EE700564335 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CE0D41242A9EE600564335 /* libMobileGestalt.tbd */; };
-		C7E341E7227762CB00A7A722 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E341E6227762CB00A7A722 /* Preferences.framework */; };
 		C7E341E92277674300A7A722 /* POScaleStepperTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E341E82277674300A7A722 /* POScaleStepperTableCell.m */; };
 		C7E559C7238B5FA500B70489 /* ContextHostManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = C71516C9225C1AA10021ADB8 /* ContextHostManager.mm */; };
 		D42216A60E43FA32DFC7C67B /* libPods-PullOverProPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ECA1F06C765737D9B1210C /* libPods-PullOverProPreferences.a */; };
@@ -73,6 +70,8 @@
 		5B74C2BF2CDCF4440057A9B9 /* libLottie.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLottie.dylib; path = "../../Downloads/libLottie-main/libLottie.dylib"; sourceTree = "<group>"; };
 		5B74C2C32CDCF5C40057A9B9 /* data.tar.lzma */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.tar.lzma; path = "../../Downloads/com.yan.lottie_4.5.0_iphoneos-arm/data.tar.lzma"; sourceTree = "<group>"; };
 		5B74C2C42CDCF5E60057A9B9 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = "../../Downloads/com.yan.lottie_4.5.0_iphoneos-arm/data/Library/Frameworks/Lottie.framework"; sourceTree = "<group>"; };
+		5B74C2CA2CDCFD6F0057A9B9 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Preferences.framework; sourceTree = "<group>"; };
+		5B74C2CE2CDCFD880057A9B9 /* libapplist.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libapplist.dylib; sourceTree = "<group>"; };
 		8FFA0C82E36BA8A0BD5D40C6 /* libPods-PullOverPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PullOverPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55CF5F79F6C1AED786C4355 /* Pods-PullOverPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullOverPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PullOverPro/Pods-PullOverPro.debug.xcconfig"; sourceTree = "<group>"; };
 		B37C22E496A4E3DD99801C4D /* Pods-PullOverPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PullOverPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-PullOverPro/Pods-PullOverPro.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,10 +153,8 @@
 			files = (
 				C7CE0D42242A9EE700564335 /* libMobileGestalt.tbd in Frameworks */,
 				C77E05E0229B2B5E003A59C9 /* QuartzCore.framework in Frameworks */,
-				5B74C2BC2CDCF3170057A9B9 /* CydiaSubstrate.framework in Frameworks */,
 				C71516BB225BE3A20021ADB8 /* CoreGraphics.framework in Frameworks */,
 				C71516B9225BE35E0021ADB8 /* AudioToolbox.framework in Frameworks */,
-				C71516B3225BC7A00021ADB8 /* libsubstrate.dylib in Frameworks */,
 				C71516B1225BC7800021ADB8 /* UIKit.framework in Frameworks */,
 				C715168B225BC4000021ADB8 /* Foundation.framework in Frameworks */,
 				531E10E1618A85A6A18FD9B3 /* libPods-PullOverPro.a in Frameworks */,
@@ -168,13 +165,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B74C2AB2CDCF01E0057A9B9 /* libapplist.dylib in Frameworks */,
 				C77E05E1229B2B62003A59C9 /* QuartzCore.framework in Frameworks */,
-				C7E341E7227762CB00A7A722 /* Preferences.framework in Frameworks */,
 				C71516D9225C676A0021ADB8 /* Foundation.framework in Frameworks */,
 				C71516DA225C676A0021ADB8 /* UIKit.framework in Frameworks */,
+				5B74C2CB2CDCFD6F0057A9B9 /* Preferences.framework in Frameworks */,
 				D42216A60E43FA32DFC7C67B /* libPods-PullOverProPreferences.a in Frameworks */,
-				C71B3149242A9D1F00515A83 /* libMobileGestalt.tbd in Frameworks */,
+				5B74C2CF2CDCFD880057A9B9 /* libapplist.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +212,8 @@
 		C7151689225BC4000021ADB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B74C2CE2CDCFD880057A9B9 /* libapplist.dylib */,
+				5B74C2CA2CDCFD6F0057A9B9 /* Preferences.framework */,
 				5B74C2C42CDCF5E60057A9B9 /* Lottie.framework */,
 				5B74C2C32CDCF5C40057A9B9 /* data.tar.lzma */,
 				5B74C2BF2CDCF4440057A9B9 /* libLottie.dylib */,
@@ -854,6 +852,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/theos/sdks/iPhoneOS14.5.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PullOverProPreferences/PullOverProPreferences-Prefix.pch";
@@ -903,6 +902,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/theos/sdks/iPhoneOS14.5.sdk/System/Library/PrivateFrameworks,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PullOverProPreferences/PullOverProPreferences-Prefix.pch";
