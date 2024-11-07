@@ -7,7 +7,7 @@
 //
 
 #import "PullOverProPreferencesController.h"
-#import <Preferences/PSSpecifier.h>
+#import "Preferences/PSSpecifier.h"
 #import <spawn.h>
 #import "QSFavoritesPickerController.h"
 
@@ -38,7 +38,7 @@ static id recentsCell;
     UIBarButtonItem* respringButton = [[UIBarButtonItem alloc] initWithTitle:@"Respring" style:UIBarButtonItemStylePlain target:self action:@selector(confirmRespring:)];
     self.navigationItem.rightBarButtonItem = respringButton;
     
-    _table.separatorStyle = UITableViewScrollPositionNone;
+//    _table.separatorStyle = UITableViewScrollPositionNone;
 }
 
 -(void)viewWillAppear:(BOOL)view{
@@ -76,11 +76,11 @@ static id recentsCell;
     [confettiArea burstAt:confettiArea.center confettiWidth:10.0f numberOfConfetti:60];
 }
 
--(void)paywallViewControllerDidCompleteAuthorization:(PaywallViewController *)paywallViewController{
+-(void)paywallViewControllerDidCompleteAuthorization:(UIPageViewController *)paywallViewController{
     [self burst];
 }
 
--(void)paywallViewControllerDidCancel:(PaywallViewController *)paywallViewController{
+-(void)paywallViewControllerDidCancel:(UIPageViewController *)paywallViewController{
 //    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

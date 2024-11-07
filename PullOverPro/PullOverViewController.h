@@ -8,8 +8,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import <Lottie/Lottie.h>
-
 #import "BaseScrollView.h"
 #import "POHandle.h"
 #import "QuickSwitchTableView.h"

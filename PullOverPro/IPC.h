@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <rocketbootstrap/rocketbootstrap.h>
+#import "rocketbootstrap/rocketbootstrap.h"
 
 @interface CPDistributedMessagingCenter
 + (instancetype)centerNamed:(NSString *)name;

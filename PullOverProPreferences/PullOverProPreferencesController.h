@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <Preferences/Preferences.h>
+#import "Preferences/Preferences.h"
 #import <L360Confetti/L360ConfettiArea.h>
 #import "POApplicationHelper.h"
 
-@interface PullOverProPreferencesController : PSListController <L360ConfettiAreaDelegate, PaywallViewControllerDelegate>
+@interface PullOverProPreferencesController : PSListController <L360ConfettiAreaDelegate, UIPageViewControllerDelegate>
 
 @property(nonatomic, strong) L360ConfettiArea *confettiArea;
 -(void)burst;

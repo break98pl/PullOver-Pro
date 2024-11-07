@@ -6,8 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Preferences/Preferences.h>
-#import <AppList/AppList.h>
+#import "Preferences/Preferences.h"
+#import "AppList/AppList.h"
 
 @interface QSFavoritesPickerController : UITableViewController
 

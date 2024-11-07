@@ -5,12 +5,12 @@ DEPENDENCIES:
   - L360Confetti
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - L360Confetti
 
 SPEC CHECKSUMS:
   L360Confetti: 9b77ea9925e758de4b6e7d1edbb7b87f3eaa0d17
 
-PODFILE CHECKSUM: acd9409fb6b804204d31fa3f24703e015b5c28bb
+PODFILE CHECKSUM: 0ba5b15daf1ebe5cafc3c7484db03d50c7c05b7d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.11.2

@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <Preferences/PSSpecifier.h>
-#import <Preferences/PSControlTableCell.h>
+#import "Preferences/PSSpecifier.h"
+#import "Preferences/PSControlTableCell.h"
 
 @interface POTimeStepperTableCell : PSControlTableCell {
 	NSString *title;
