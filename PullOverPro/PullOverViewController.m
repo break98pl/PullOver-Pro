@@ -522,17 +522,9 @@ static NSNumber *origOffset = nil;
         [self.contentView addSubview:wontHostLabel];
         
         p = [self.scrollView convertPoint:self.contentView.center toView:self.contentView];
-//        LOTAnimationView *animation = [LOTAnimationView animationWithFilePath:@"/Library/Application Support/PullOverPro/empty_status.json"];
-//        animation.frame = CGRectMake(0, 0, 200, 200);
-//        [animation setContentMode:UIViewContentModeScaleAspectFit];
-//        animation.center = CGPointMake(p.x, p.y-60);
-//        [self.contentView addSubview:animation];
-//        [animation setLoopAnimation:YES];
-//        [animation play];
         
         if ([[POApplicationHelper settings][@"leftHanded"] boolValue]){
             wontHostLabel.transform = CGAffineTransformMakeScale(-1.0, 1.0);
-//            animation.transform = CGAffineTransformMakeScale(-1.0, 1.0);
         }
     });
 }
