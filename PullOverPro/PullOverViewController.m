@@ -121,7 +121,7 @@ static bool showingCantHost = NO;
     self.contentView.center = CGPointMake(self.contentView.center.x, self.view.frame.size.height/2);
     if (@available(iOS 13, *)){
         NSLog(@"iOS 13 bg color");
-        self.contentView.backgroundColor = [UIColor performSelector:@selector(secondarySystemBackgroundColor)];
+        self.contentView.backgroundColor = [UIColor darkGrayColor];
     }else{
         NSLog(@"pre 13 bg color");
 

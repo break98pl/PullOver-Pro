@@ -37,7 +37,7 @@
         [self addGestureRecognizer:longPress];
         
         
-        self.darkMode = [[POApplicationHelper settings][@"darkHandle"] boolValue];
+        self.darkMode = true;
         
         UIBlurEffect *blur = [UIBlurEffect effectWithStyle:self.darkMode?UIBlurEffectStyleDark:UIBlurEffectStyleRegular];
         blurView = [[UIVisualEffectView alloc] initWithEffect:blur];
